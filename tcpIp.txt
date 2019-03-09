@@ -1,0 +1,32 @@
+tcp/ip
+
+packet: 컴퓨터 네트워크가 전달하는 데이터의 형식화된 블록
+	구성: 헤더, 데이터, 트레일러로 구성
+
+tcp: transmission control protocol,올바른 통신을 도움
+ip: internet protocol, tcp패킷 전송
+wan: wide area network
+lan: local area network
+isp: internet service provider
+
+스위치와 허브 차이점: 전송 대역
+	허브는 1차선(속도가 줄어들음), 스위치는 다차선(속도가 그대로임)
+
+osi(open system interconnection) 7계층
+7: 응용(application)
+6: 표현(presentation)
+5: 세션(session)
+4: 전송(transport)
+3: 네트워크(network)
+2: 데이터 링크(data link)
+1: 물리(physical)
+
+router: 패킷의 위치를 추출하여, 그 위치에 대한 최적의 경로를 지정, 경로에 따라서 패킷을 다음 장치로 전향시킴, gateway
+rip(routing information protocol): 최신의 routing 경로 정보를 가지는 routing table를 유지할수 있게 된다.
+arp(address resolution protocol): ethernet과 ip주소를 매핑시켜주는 프로토콜
+
+ARP 를 받은 호스트는 자신의 IP와 비교하고, 만약 맞다면 ARP 를 보낸 호스트로 ARP reply(즉 나 존재합니다)를 되돌려주고, 이것 받은 쪽에서는 ARP reply 를 보낸 호스트의 이더넷 카드주소를 알아내게 된다
+
+gateway: LAN 으로 묶인 호스트들이 외부로 나가기 위한 통로 호스트 이다. 모든 호스트들은 Gateway 를 통해서만 외부의 다른 호스트에 접근이 가능하도록 되어 있다. Gateway 는 자신의 서브네트웍의 통로가 된다
+
+token ring: 근거리 통신망을 나타내는 네트웍 구조
