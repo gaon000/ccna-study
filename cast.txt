@@ -1,0 +1,5 @@
+unicast, multicast, broadcast
+
+unicast: 편지,lan에서 목적지와 출발지를 써넣음,  mac주소를 자신의 mac주소와 비교하여 통신, 다른경우 버림, cpu성능저하 x, nic(랜카드)에서 처리
+broadcast: 마을 방송, 무조건 받음, 트레픽 증가, cpu성능 저하, mac주소를 알아내는 동작, arp=broadcast, 라우터 끼리의 정보교환, 서버 -> all client
+multicast: 그룹 내 사람들에게 선택적으로 한번에 보냄, 라우터나 스위치가 기능을 지원해야됨
