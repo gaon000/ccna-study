@@ -1,0 +1,18 @@
+switch와 hub의 차이점: 포트별로 collision이 나누어져 있음, 여러개의 노드가 동시에 통신이 가능하다(속도가 빠르다)
+
+birdge: collision domain을 나누어 사이에 bridge를 놓음, 요즘은 스위치가 대체함
+
+bridge 와 switch의 기능:
+1. learning: 배움, 프레임을 보내면 mac address 를 mac address table에 저장, 후에 mac address table을 참고함
+2. flooding: 들어온 포트를 제외한 다른 모든 포트로 뿌림, mac address table에없는 주소일시 뿌림, 브로드캐스트나 멀티캐스트의 경우 발생
+3. forwarding: 해당 포트로 건네줌, 테이블에 mac address가 있을시 flooding를 하지 않고 해당 포트로만 뿌림
+4. filtering: 다른 포트로 못가게 막음, 테이블에 mac address가 있고 출발지와 목적지가 같은 세그먼트에 있는 경우, 다리를 막는 필터링 실시, 브리지의 필터링이 collision domain을 나눠주는 기능을 함
+5. aging: 나이를 먹음, 테이블은 한정되어 있기 때문에 평생 저장이 불가능 따라서 정보를 지움, 시간은 디폴트로 5분(조정 가능), 프레임이 5분이 되기 전에 들어올시 타이머를 리셋함(refresh한다고 함)
+
+bridge와 switch의 차이점:
+1. 스위치는 하드웨어적 방법이기 때문에 빠름(ASIC(application-specific integrated circuit)방식)
+2. 브리지는 모든 포트가 같은 속도 하지만 스위치는 다른 속도를 연결 가능
+3. 스위치가 포트수가 훨씬 많음
+4. 
+
+
