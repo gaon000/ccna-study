@@ -1,0 +1,4 @@
+bus: 데이터를 전송하는 통신 시스템
+	종류:
+		1. PCI bus(peripheral component interconnect bus): 가장 많이 사용되는 방식의 버스
+		2. ISA bus(industry standard architecture bus): pci이전에 가장 ㅁ낳이 사용되던 방식
