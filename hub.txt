@@ -1,0 +1,9 @@
+hub: multiport, repeater, CSMA/CD 적용, 모두 같은 collision domain
+	multiport: 포트가 여러개
+	repeater: 신호가 먼 거리에 다다를 수 있게 도와줌
+
+
+한계: collision domain 안에 있기 때문에 한번에 하나만 data를 보낼수 있음(shared), 속도를 공유함, 따라서 switch사용
+
+허브의 종류: nms(network management station)를 통해서 관리 되냐의 차이
+			1. intelligent: 지능형, nms를 통해서 데이터 분석이나 제어 가능, 문제 있는 pc의 포트를 isolation시킴
