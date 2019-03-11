@@ -1,0 +1,1 @@
+gateway: wan과 연결하는 게이트
