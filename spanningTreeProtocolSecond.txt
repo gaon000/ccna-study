@@ -1,0 +1,14 @@
+root port나 designated port를 정하는 방법:
+1. 누가 더 작은 root bid를 가졌는가?
+2. 루트 브리지까지의 path cost 값이 더 작은가?
+3. 누구의 bid가 더 낮은가?
+4. 누구의 포트 ID가 더 낮은가?
+
+BPDU(Bridge Protocol Data Unit): 스패닝 트리 정보를 보낸다. root bid, root path cost, sender Bid, port id등이 들어있다. 
+
+스위치가 부팅을 하면 각각의 포트로 2초마다 BPDU를 보내면서 스패닝 트리 정보를 주고 받게 된다.								 
+root bridge 선출 방법: 무조건 낮은 BID를 갖는 스위치, 서로 BPDU를 주고 받으면서 루트브리지를 선출한다.
+
+root port 선출 방법: 루트 브리지까지의 path cost가 가장 작은 포트
+
+designated port 선출 방법: 루트 브리지까지의 path cost가 가장 작은 비용을 가진 포트 designated port가 된다. 루트 브리지의 포트들은 모두 designated port가 된다. root path cost가 같을 경우 위에 있는 4단게를 비교하여 결정을 하게 된다.
